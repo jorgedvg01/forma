@@ -1,0 +1,122 @@
+
+    #forma-cards{width:100%}
+    #forma-cards .fc-app{--f-bg:light-dark(#f0f0ef,#151516);--f-surface:light-dark(#fafaf9,#242425);--f-front:light-dark(#ffffff,#303032);--f-ink:light-dark(#252527,#f2f2f0);--f-muted:light-dark(#727275,#acacae);--f-line:light-dark(#d9d9d8,#434345);--f-soft:light-dark(#e9e9e7,#333335);--f-inverse:light-dark(#fafaf9,#252527);--f-shadow:light-dark(#20202013,#00000032);--f-glow:light-dark(#ffffffc0,#ffffff0b);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--f-ink);background:var(--f-bg);border:1px solid var(--f-line);border-radius:22px;overflow:hidden;position:relative;letter-spacing:-.2px;box-shadow:0 20px 65px var(--f-shadow);--f-round:20px}
+    #forma-cards .fc-app *{box-sizing:border-box}
+    #forma-cards .fc-app [hidden]{display:none!important}
+    #forma-cards h2,#forma-cards h3,#forma-cards p{margin:0}
+    #forma-cards .fc-app button,#forma-cards .fc-app input,#forma-cards .fc-app textarea{font-family:inherit}
+    #forma-cards .fc-app button{color:inherit}
+    #forma-cards .fc-app svg{width:16px;height:16px;flex-shrink:0}
+    #forma-cards .fc-app button:disabled{cursor:default;opacity:.45}
+    #forma-cards .fc-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 28px;border-bottom:1px solid var(--f-line);background:var(--f-surface);padding-right:105px}
+    #forma-cards .fc-brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--f-ink);font-size:22px;font-weight:500;letter-spacing:-1px}
+    #forma-cards .fc-brand>span:first-child{font:500 25px/1 Georgia,serif;background:var(--f-ink);color:var(--f-inverse);border-radius:11px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;padding-bottom:3px}
+    #forma-cards .fc-brand .fc-brand-note{font-size:11px;color:var(--f-muted);letter-spacing:1px;padding-left:14px;margin-left:10px;border-left:1px solid var(--f-line)}
+    #forma-cards .fc-tour-open{display:flex;align-items:center;gap:7px;border:1px solid var(--f-line);border-radius:30px;padding:9px 12px;background:var(--f-front);font-size:11px;min-height:36px}
+    #forma-cards .fc-project{padding:33px 32px 30px;display:flex;align-items:end;justify-content:space-between;gap:20px;background:linear-gradient(115deg,var(--f-surface),var(--f-bg))}
+    #forma-cards .fc-crumb{font-size:11px;letter-spacing:1.3px;color:var(--f-muted);display:flex;gap:10px;align-items:center;margin-bottom:18px}
+    #forma-cards .fc-crumb span{color:var(--f-line)}
+    #forma-cards h2{font-size:39px;line-height:1.08;font-weight:500;letter-spacing:-2px}
+    #forma-cards .fc-project-side{text-align:right;padding-bottom:3px}
+    #forma-cards .fc-person{font-size:11px;display:inline-flex;gap:7px;align-items:center;border:1px solid var(--f-line);padding:6px 11px;border-radius:20px;background:var(--f-front)}
+    #forma-cards .fc-person svg{width:12px;height:12px}
+    #forma-cards .fc-project-side p{font-size:12px;color:var(--f-muted);line-height:1.6;margin-top:12px}
+    #forma-cards .fc-content{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);border-block:1px solid var(--f-line);min-height:570px}
+    #forma-cards .fc-map{position:relative;display:flex;flex-direction:column;padding:24px 23px;min-width:0;background-image:radial-gradient(var(--f-line) .6px,transparent .6px);background-size:18px 18px}
+    #forma-cards .fc-map-label{display:flex;gap:10px;justify-content:space-between;align-items:start;font-size:11px;letter-spacing:1px;color:var(--f-muted)}
+    #forma-cards .fc-map-status{letter-spacing:0;text-align:right;max-width:160px;line-height:1.5}
+    #forma-cards .fc-graph{display:flex;flex-direction:column;align-items:center;padding:38px 0 30px;flex:1}
+    #forma-cards .fc-node{background:linear-gradient(140deg,var(--f-front),var(--f-surface));border:1px solid var(--f-line);border-radius:15px;padding:15px;display:flex;align-items:center;gap:10px;text-align:left;width:100%;min-width:0;box-shadow:0 3px 12px var(--f-shadow);position:relative;font-size:12px}
+    #forma-cards .fc-node[aria-pressed=true]{border-color:var(--f-muted);box-shadow:0 0 0 3px var(--f-soft),0 8px 25px var(--f-shadow)}
+    #forma-cards .fc-super{max-width:245px;min-height:82px}
+    #forma-cards .fc-node-icon{width:32px;height:32px;border-radius:11px;background:var(--f-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    #forma-cards .fc-node-copy{display:grid;gap:6px;min-width:0}
+    #forma-cards .fc-node strong{font-size:12px;font-weight:500;line-height:1.5;overflow-wrap:anywhere}
+    #forma-cards .fc-node small{font-size:11px;color:var(--f-muted);line-height:1.5}
+    #forma-cards .fc-node .fc-flag{margin-left:auto;width:13px;height:13px}
+    #forma-cards .fc-stem{width:1px;height:32px;background:var(--f-line);flex-shrink:0}
+    #forma-cards .fc-cross{height:1px;width:68%;background:var(--f-line)}
+    #forma-cards .fc-branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;width:100%}
+    #forma-cards .fc-branch{display:flex;flex-direction:column;align-items:center;min-width:0}
+    #forma-cards .fc-branch>.fc-stem{height:20px}
+    #forma-cards .fc-branch .fc-node{min-height:127px;flex-direction:column;align-items:start;padding:14px 10px;gap:10px}
+    #forma-cards .fc-branch .fc-node .fc-flag{position:absolute;right:11px;top:15px}
+    #forma-cards .fc-node[aria-disabled=true]{background:var(--f-bg);box-shadow:none;border-style:dashed;color:var(--f-muted)}
+    #forma-cards .fc-leaves{width:100%;display:grid;gap:7px;margin-top:15px}
+    #forma-cards .fc-leaf{border:1px solid var(--f-line);background:var(--f-front);border-radius:9px;padding:10px 8px;font-size:11px;line-height:1.5;text-align:left;display:flex;gap:5px;align-items:center;min-height:39px}
+    #forma-cards .fc-leaf svg{width:12px;height:12px}
+    #forma-cards .fc-leaf:disabled{border-style:dashed;background:var(--f-bg);color:var(--f-muted)}
+    #forma-cards .fc-map-caption{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--f-muted);margin-top:auto;background:var(--f-bg);align-self:start;line-height:1.6;padding:4px 0}
+    #forma-cards .fc-status-dot{width:5px;height:5px;background:var(--f-muted);border-radius:50%;flex-shrink:0}
+    #forma-cards .fc-panel{background:var(--f-surface);border-left:1px solid var(--f-line);padding:25px;min-width:0;position:relative;display:flex;flex-direction:column}
+    #forma-cards .fc-panel-head{display:flex;align-items:center;gap:10px;margin-bottom:24px}
+    #forma-cards .fc-panel-head .fc-node-icon{background:var(--f-ink);color:var(--f-inverse)}
+    #forma-cards .fc-panel-head strong{display:block;font-size:12px;font-weight:500;line-height:1.5}
+    #forma-cards .fc-panel-head small{display:block;font-size:11px;color:var(--f-muted);margin-top:3px}
+    #forma-cards .fc-label{margin-left:auto;white-space:nowrap;background:var(--f-soft);padding:5px 8px;border-radius:20px;font-size:11px;color:var(--f-muted)}
+    #forma-cards h3{font-size:27px;font-weight:500;letter-spacing:-1.1px;line-height:1.15;margin-bottom:13px}
+    #forma-cards .fc-panel p{font-size:12px;color:var(--f-muted);line-height:1.75}
+    #forma-cards .fc-field{display:grid;gap:8px;font-size:11px;margin-top:20px}
+    #forma-cards textarea,#forma-cards input{border:1px solid var(--f-line);border-radius:13px;padding:14px;background:var(--f-front);color:var(--f-ink);font-size:13px;line-height:1.75;width:100%;resize:vertical;min-width:0;box-shadow:inset 0 1px 2px var(--f-shadow)}
+    #forma-cards .fc-button{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--f-line);background:var(--f-front);padding:12px 13px;min-height:43px;border-radius:11px;text-align:left;font-size:12px;line-height:1.5;transition:transform .18s,background .18s}
+    #forma-cards .fc-button:hover{transform:translateY(-1px);background:var(--f-soft)}
+    #forma-cards .fc-strong{background:var(--f-ink)!important;color:var(--f-inverse)!important;border-color:var(--f-ink)!important}
+    #forma-cards .fc-actions{display:grid;gap:8px;margin-top:20px}
+    #forma-cards .fc-back{display:inline-flex;gap:7px;align-items:center;background:transparent;border:0;padding:0;min-height:30px;font-size:11px;color:var(--f-muted);margin-bottom:13px;align-self:start}
+    #forma-cards .fc-saved{background:var(--f-soft);border-radius:13px;padding:15px;margin-top:19px;font-size:13px;line-height:1.75;overflow-wrap:anywhere}
+    #forma-cards .fc-saved small{display:block;font-size:11px;letter-spacing:.5px;color:var(--f-muted);margin-bottom:7px}
+    #forma-cards .fc-added-list{display:grid;gap:8px;margin:15px 0 0;padding:0;list-style:none}
+    #forma-cards .fc-added-list li{font-size:11px;display:flex;align-items:start;gap:7px;line-height:1.6}
+    #forma-cards .fc-added-list svg{width:12px;height:12px;margin-top:3px}
+    #forma-cards .fc-fine{font-size:11px!important;margin-top:17px!important;line-height:1.65!important}
+    #forma-cards .fc-deck{position:relative;margin:25px 0 0;padding:0 8px 15px;min-height:270px;isolation:isolate;touch-action:pan-y}
+    #forma-cards .fc-deck:before,#forma-cards .fc-deck:after{content:"";position:absolute;inset:12px 17px 5px;background:var(--f-soft);border:1px solid var(--f-line);border-radius:var(--f-round);z-index:-1;transform:rotate(-3deg)}
+    #forma-cards .fc-deck:after{inset:7px 13px 9px;background:var(--f-front);transform:rotate(2deg)}
+    #forma-cards .fc-idea-card{position:relative;min-height:250px;background:linear-gradient(145deg,var(--f-front),var(--f-surface));border:1px solid var(--f-line);border-radius:var(--f-round);padding:23px;box-shadow:0 14px 28px var(--f-shadow),inset 0 1px 0 var(--f-glow);transform-origin:50% 100%;will-change:transform;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+    #forma-cards .fc-card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:11px;color:var(--f-muted);letter-spacing:.7px;margin-bottom:24px}
+    #forma-cards .fc-card-symbol{width:38px;height:38px;border-radius:12px;background:var(--f-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+    #forma-cards .fc-idea-card h4{font-size:23px;font-weight:500;line-height:1.15;letter-spacing:-.8px;margin:0 0 13px}
+    #forma-cards .fc-idea-card p{font-size:13px;line-height:1.8}
+    #forma-cards .fc-card-link{font-size:11px;color:var(--f-muted);border-top:1px solid var(--f-line);padding-top:14px;margin-top:20px;line-height:1.6}
+    #forma-cards .fc-swipe-label{position:absolute;top:20px;left:17px;border:2px solid var(--f-ink);border-radius:7px;padding:6px 9px;font-size:15px;font-weight:500;letter-spacing:1px;background:var(--f-front);opacity:0;transform:rotate(-10deg);pointer-events:none}
+    #forma-cards .fc-deck-actions{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:14px}
+    #forma-cards .fc-choice{border:1px solid var(--f-line);border-radius:30px;background:var(--f-front);padding:11px 17px;font-size:12px;display:flex;gap:8px;align-items:center;min-height:44px;box-shadow:0 3px 8px var(--f-shadow)}
+    #forma-cards .fc-deck-hint{text-align:center;font-size:11px!important;margin-top:13px!important;line-height:1.5!important}
+    #forma-cards .fc-decision{font-size:11px!important;margin-top:15px!important;min-height:18px;color:var(--f-ink)!important;text-align:center}
+    #forma-cards .fc-sheet{margin-top:20px;border-top:1px solid var(--f-line);padding-top:17px}
+    #forma-cards .fc-sheet summary{font-size:11px;color:var(--f-muted)}
+    #forma-cards .fc-sheet dl{display:grid;grid-template-columns:75px 1fr;gap:12px;font-size:11px;line-height:1.6;margin-bottom:0}
+    #forma-cards dt{color:var(--f-muted)}#forma-cards dd{margin:0}
+    #forma-cards .fc-notice{margin-top:15px;background:var(--f-soft);border-radius:10px;padding:12px 14px;font-size:11px;line-height:1.6}
+    #forma-cards .fc-footer{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;background:var(--f-surface);padding:16px 25px;color:var(--f-muted);font-size:11px;line-height:1.6}
+    #forma-cards .fc-footer>span:first-child{letter-spacing:.7px}
+    #forma-cards .fc-tourbar{background:var(--f-front);border-top:1px solid var(--f-line);padding:20px 25px;position:relative;z-index:5}
+    #forma-cards .fc-tour-label{display:flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.7px;color:var(--f-muted)}
+    #forma-cards .fc-tour-indicator{width:5px;height:5px;border-radius:50%;background:var(--f-ink)}
+    #forma-cards .fc-icon-button{background:transparent;border:0;padding:6px;display:flex;min-height:32px;align-items:center;justify-content:center;margin-left:auto}
+    #forma-cards .fc-tour-copy{display:flex;align-items:start;gap:16px;margin-top:12px}
+    #forma-cards .fc-tour-number{width:31px;height:31px;border-radius:9px;background:var(--f-soft);font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    #forma-cards .fc-tour-title{font-size:15px;font-weight:500;line-height:1.4;display:block}
+    #forma-cards .fc-tour-description{font-size:12px;color:var(--f-muted);line-height:1.65;margin-top:5px}
+    #forma-cards .fc-tour-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:17px;padding-left:47px}
+    #forma-cards .fc-small-button{border:1px solid var(--f-line);background:var(--f-surface);border-radius:8px;font-size:11px;padding:8px 12px;min-height:35px}
+    #forma-cards .fc-tour-position{font-size:11px;color:var(--f-muted);margin-left:auto}
+    #forma-cards .fc-tour-track{height:3px;background:var(--f-soft);margin-top:18px;border-radius:2px;overflow:hidden}
+    #forma-cards .fc-tour-track div{height:100%;background:var(--f-ink);width:0;transition:width .4s}
+    #forma-cards .fc-demo-cursor{position:absolute;left:0;top:0;z-index:8;pointer-events:none;display:flex;align-items:start;gap:2px;filter:drop-shadow(0 2px 3px var(--f-shadow));transition:transform .7s cubic-bezier(.22,.8,.3,1)}
+    #forma-cards .fc-demo-cursor svg{width:22px;height:22px;color:var(--f-ink);fill:var(--f-front);stroke-width:1.5}
+    #forma-cards .fc-demo-cursor span{font-size:11px;background:var(--f-ink);color:var(--f-inverse);padding:4px 7px;border-radius:5px;margin-top:16px}
+    #forma-cards .fc-click-flash{box-shadow:0 0 0 4px var(--f-line)!important}
+    #forma-cards .fc-empty-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;min-height:250px}
+    #forma-cards .fc-empty-card h4{font-size:21px;margin:0}
+    @media(max-width:850px){#forma-cards .fc-content{grid-template-columns:1fr 1fr}#forma-cards .fc-project{padding:28px}#forma-cards .fc-panel{padding:23px}#forma-cards .fc-map{padding:23px 17px}#forma-cards .fc-branches{gap:6px}#forma-cards .fc-node strong{font-size:11px}#forma-cards .fc-branch .fc-node{padding:13px 8px}#forma-cards .fc-idea-card{padding:20px}#forma-cards .fc-idea-card h4{font-size:22px}}
+    @media(max-width:650px){#forma-cards .fc-content{grid-template-columns:1fr}#forma-cards .fc-map{padding:20px}#forma-cards .fc-graph{padding:25px 0}#forma-cards .fc-panel{border-left:0;border-top:1px solid var(--f-line);padding:25px}#forma-cards .fc-project{padding:25px 22px}#forma-cards h2{font-size:33px}#forma-cards .fc-header{padding:17px 20px;flex-wrap:wrap;padding-right:95px}#forma-cards .fc-brand .fc-brand-note{display:none}#forma-cards .fc-tour-open{font-size:11px}#forma-cards .fc-header-actions{width:100%}#forma-cards .fc-project-side p{display:none}#forma-cards .fc-project-side{align-self:start;padding-top:4px}#forma-cards .fc-person{font-size:11px;white-space:nowrap}#forma-cards .fc-person svg{display:none}#forma-cards .fc-crumb{font-size:11px;gap:6px}#forma-cards .fc-branches{gap:10px}#forma-cards .fc-node strong{font-size:12px}#forma-cards textarea,#forma-cards input{font-size:16px}#forma-cards .fc-tourbar{padding:20px}#forma-cards .fc-tour-controls{padding-left:0}#forma-cards .fc-tour-description{font-size:12px}#forma-cards .fc-deck{max-width:380px;width:100%;align-self:center;margin-top:25px}#forma-cards .fc-app{border-radius:17px}#forma-cards .fc-map-caption{font-size:11px}#forma-cards .fc-footer{padding:15px 20px}#forma-cards .fc-choice{min-height:46px}#forma-cards .fc-small-button{min-height:40px}}
+    @media(max-width:380px){#forma-cards .fc-project-side{display:none}#forma-cards h2{font-size:32px}#forma-cards .fc-map{padding:18px 13px}#forma-cards .fc-branches{gap:6px}#forma-cards .fc-node strong{font-size:11px}#forma-cards .fc-branch .fc-node{padding:13px 8px}#forma-cards .fc-panel{padding:22px 18px}#forma-cards .fc-choice{padding:11px 13px}#forma-cards .fc-tour-controls{gap:5px}#forma-cards .fc-small-button{padding:8px 9px}#forma-cards .fc-tour-position{width:100%;margin-top:5px}#forma-cards .fc-deck-actions{gap:10px}}
+    @media(prefers-reduced-motion:reduce){#forma-cards .fc-button,#forma-cards .fc-demo-cursor,#forma-cards .fc-tour-track div{transition:none!important}}
+  
+html{color-scheme:light dark;background:light-dark(#e6e6e4,#101011)}body{margin:0;padding:28px 20px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}#forma-cards{max-width:1400px;margin:auto}button{cursor:pointer}button:disabled{cursor:default}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+#forma-cards .fc-header{padding-right:28px}#forma-cards .fc-header-actions{display:flex;gap:8px;flex-wrap:wrap}#forma-cards .fc-export-open{background:var(--f-ink);color:var(--f-inverse)}
+#forma-cards .fc-export-dialog{background:var(--f-surface);color:var(--f-ink);border:1px solid var(--f-line);border-radius:22px;padding:28px;width:min(560px,calc(100% - 32px));max-height:85vh;overflow:auto;box-shadow:0 20px 80px #0004}
+#forma-cards .fc-export-dialog::backdrop{background:#0007;backdrop-filter:blur(6px)}#forma-cards .fc-export-top{display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:1px;color:var(--f-muted);margin-bottom:15px}#forma-cards .fc-export-dialog h2{font-size:30px;letter-spacing:-1px}#forma-cards .fc-export-dialog p{font-size:13px;line-height:1.8;color:var(--f-muted);margin-top:15px}#forma-cards .fc-export-targets{display:flex;gap:8px;margin-top:22px}#forma-cards .fc-export-targets button{border:1px solid var(--f-line);background:var(--f-front);color:var(--f-ink);border-radius:12px;padding:12px 18px;font-size:14px}#forma-cards .fc-export-targets button[aria-pressed=true]{background:var(--f-ink);color:var(--f-inverse)}#forma-cards .fc-export-summary{background:var(--f-soft);padding:15px 18px;border-radius:12px;font-size:13px;line-height:1.8;margin-top:20px}#forma-cards .fc-export-files{padding-left:18px;font:12px/1.9 ui-monospace,monospace;overflow-wrap:anywhere}#forma-cards .fc-export-dialog .fc-export-limits{font-size:12px}#forma-cards .fc-export-dialog .fc-export-status{font-size:12px;color:var(--f-ink)}
+@media(max-width:650px){body{padding:10px}#forma-cards .fc-header{padding-right:20px}#forma-cards .fc-header-actions{width:auto}#forma-cards .fc-header{gap:15px}#forma-cards .fc-tour-open{min-height:42px}#forma-cards .fc-export-dialog{padding:22px}}
+#forma-cards .fc-header .fc-export-open{background:var(--f-ink);color:var(--f-inverse)}

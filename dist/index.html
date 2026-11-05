@@ -1,0 +1,23 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Da forma a tu proyecto con un organigrama, recomendaciones en tarjetas y encargos exportables para ChatGPT o Claude. Prototipo interactivo con tutorial animado."><title>Forma · Una idea, tu equipo</title><link rel="stylesheet" href="styles.css"><script defer src="vendor/lucide.min.js"></script><script defer src="vendor/jszip.min.js"></script><script defer src="app.js"></script></head><body><div id="forma-cards" aria-label="Forma, diseño del proyecto y recomendaciones con tarjetas">
+  <div class="fc-app">
+    <header class="fc-header"><a class="fc-brand" href="#" aria-label="Forma, inicio"><span>f.</span>forma<span class="fc-brand-note">ESPACIO DE IDEAS</span></a><div class="fc-header-actions"><button type="button" class="fc-tour-open fc-export-open cursor-interaction" data-act="export" disabled>Exportar equipo</button><button type="button" class="fc-tour-open cursor-interaction" data-act="tour"><i data-lucide="circle-play" aria-hidden="true"></i>Ver cómo funciona</button></div></header>
+    <div class="fc-project"><div><div class="fc-crumb">TU PROYECTO <span>/</span> EN CONSTRUCCIÓN</div><h2>Las grandes ideas<br>empiezan por una.</h2></div><div class="fc-project-side"><span class="fc-person"><i data-lucide="user-round" aria-hidden="true"></i>Tú decides.</span><p>Define la idea.<br>Dale un equipo.</p></div></div>
+    <div class="fc-content"><section class="fc-map" aria-label="Organigrama"><div class="fc-map-label"><span>MAPA DE TRABAJO</span><span class="fc-map-status">Primero, los cimientos</span></div><div class="fc-graph"></div><div class="fc-map-caption"><span class="fc-status-dot"></span><span class="fc-map-caption-text">Cada área se activa cuando llega su momento.</span></div></section><aside class="fc-panel" aria-label="Espacio de trabajo"></aside></div>
+    <footer class="fc-footer"><span>FORMA · PROTOTIPO FUNCIONAL</span><span>Guardado en este navegador · propuestas preparadas · IA no conectada</span></footer>
+    <div class="fc-tourbar" hidden><div class="fc-tour-label"><span class="fc-tour-indicator"></span><span>RECORRIDO GUIADO · SIMULACIÓN</span><button class="fc-icon-button cursor-interaction" type="button" data-act="close-tour" aria-label="Cerrar tutorial"><i data-lucide="x" aria-hidden="true"></i></button></div><div class="fc-tour-copy"><span class="fc-tour-number"></span><div><strong class="fc-tour-title"></strong><p class="fc-tour-description"></p></div></div><div class="fc-tour-controls"><button type="button" class="fc-small-button cursor-interaction" data-act="tour-prev">Anterior</button><button type="button" class="fc-small-button fc-strong cursor-interaction" data-act="tour-play">Reproducir</button><button type="button" class="fc-small-button cursor-interaction" data-act="tour-next">Siguiente</button><span class="fc-tour-position"></span></div><div class="fc-tour-track"><div></div></div></div>
+    <dialog class="fc-export-dialog" aria-labelledby="fc-export-title">
+<div class="fc-export-top"><span>EXPORTAR EQUIPO</span><button type="button" class="fc-icon-button" data-export-act="close" aria-label="Cerrar exportación">×</button></div>
+<h2 id="fc-export-title">Lleva tu idea contigo.</h2><p class="fc-export-intro">Descarga el plan, los encargos y las reglas de coordinación. Después puedes utilizarlos en el entorno elegido.</p>
+<div class="fc-export-targets" role="group" aria-label="Destino del paquete"><button type="button" data-target="chatgpt" aria-pressed="false">ChatGPT</button><button type="button" data-target="claude" aria-pressed="true">Claude</button></div>
+<div class="fc-export-summary"></div><details class="fc-sheet"><summary>Ver el contenido del paquete</summary><ul class="fc-export-files"></ul></details>
+<p class="fc-export-limits">La descarga no crea ni conecta conversaciones. Las instrucciones te guían para iniciarlas; la automatización requiere un entorno y un canal compatibles. No se incluyen claves ni credenciales.</p>
+<div class="fc-actions"><button type="button" class="fc-button fc-strong" data-export-act="download">Descargar equipo .zip <span>↓</span></button><button type="button" class="fc-button" data-export-act="copy">Copiar instrucción de inicio <span>↗</span></button></div><p class="fc-export-status" role="status"></p>
+</dialog><div class="fc-demo-cursor" hidden aria-hidden="true"><i data-lucide="mouse-pointer-2"></i><span>Alumno</span></div>
+  </div>
+  
+  
+</div>
+
+
+
+</body></html>
